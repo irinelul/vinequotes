@@ -1,0 +1,59 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footerMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: #bdbdbd;
+    padding: 1rem;
+}
+
+.footerSingleLine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 0.95rem;
+    color: #bdbdbd;
+    padding: 1rem;
+    font-style: italic;
+    flex-wrap: wrap;
+}
+
+.privacyLink {
+    text-decoration: underline;
+    color: #bdbdbd;
+    transition: color 0.2s;
+    margin-left: 0.5rem;
+}
+.privacyLink:hover {
+    color: #e0e0e0;
+}
+
+.projectLinkWrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.projectLink {
+    color: #00b9fe;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    letter-spacing: 0.01em;
+    transition: color 0.2s;
+}
+.projectLink:hover {
+    color: #0090c1;
+} 

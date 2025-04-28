@@ -1,0 +1,178 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 120px; /* Increased padding to account for both buttons */
+    position: relative; /* Add position relative for z-index context */
+}
+
+/* Add styles for pagination container */
+.pagination-container {
+    position: relative;
+    z-index: 800; /* Lower than the feedback button's z-index */
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    /* Mobile logo styles - significantly increased size */
+    .logo-container {
+        top: 0;
+        background-color: var(--bg-color);
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        z-index: 100;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .logo-container img {
+        height: 80px; /* Substantially increased from 55px */
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .logo-container img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Hide feedback button on mobile */
+    .floating-feedback-button {
+        display: none;
+    }
+
+    /* Other mobile styles */
+    .input-container {
+        flex-direction: column;
+        width: 90% !important;
+        gap: 10px;
+        margin-top: 1rem;
+    }
+
+    .input-container button {
+        width: 100%;
+        margin: 5px 0 !important;
+    }
+
+    .search-input {
+        width: 100% !important;
+    }
+
+    .year-tooltip, .sort-tooltip {
+        width: 48%;
+    }
+
+    .radio-group {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .game-tooltip {
+        flex: 1;
+    }
+
+    .mobile-quote-group {
+        margin-bottom: 20px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .mobile-quotes-list {
+        border-top: 1px solid var(--border-color);
+    }
+
+    .footer-message {
+        width: 90%;
+        font-size: 0.8rem;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    /* Mobile-specific styles for bold tags */
+    .mobile-quote-item button span b {
+        color: #FF0000 !important;
+        font-weight: bold !important;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+    .logo-container {
+        margin-bottom: 2rem;
+        cursor: pointer;
+    }
+
+    .logo-container img {
+        height: 100px; /* Substantially increased from 70px */
+        transition: transform 0.2s ease;
+    }
+
+    .logo-container img:hover {
+        transform: scale(1.05);
+    }
+
+    .year-tooltip, .sort-tooltip {
+        min-width: 120px;
+    }
+
+    .game-tooltip {
+        flex: 1;
+    }
+
+    .radio-group {
+        display: flex;
+        gap: 15px;
+        margin: 10px auto;
+        justify-content: center;
+    }
+
+    .floating-feedback-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: var(--accent-color);
+        color: white;
+        border: none;
+        border-radius: 30px;
+        padding: 10px 20px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        cursor: pointer;
+        z-index: 900;
+        font-size: 1rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.2s ease;
+    }
+
+    .floating-feedback-button:hover {
+        background-color: #e04c4c; /* Slightly different shade for hover */
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+}
+
+/* Global styles for search term highlighting */
+b {
+    color: #FF0000 !important;
+    font-weight: bold !important;
+}
+
+/* Quote item styling */
+.quote-item button,
+.mobile-quote-item button {
+    color: #4A90E2 !important;
+}
+
+.total-quotes {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
