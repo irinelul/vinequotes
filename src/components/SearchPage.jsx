@@ -46,12 +46,8 @@ const SearchPage = ({
     <div className='main-container'>
         <div className="logo-container" onClick={handleLogoClick}>
             <img 
-                src="/JRE.webp" 
-                alt="JRE Logo"
-                onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = "/JRE.webp";
-                }}
+                src="public\Vineshroom.webp" 
+                alt="Vine sauce shroom Logo"
             />
         </div>
         <div className="donate-banner" style={{

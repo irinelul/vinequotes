@@ -488,7 +488,7 @@ export const Quotes = ({ quotes = [], searchTerm, totalQuotes = 0, onShowDonatio
                                           const cleanSearchTerm = searchTerm.replace(/"/g, '');
                                           const tweetText = totalQuotes === 1 
                                               ? `The only quote mentioning "${cleanSearchTerm}": ${videoUrl}\n\nFound on: ${pageUrl}`
-                                              : `Just one of ${totalQuotes} podcast quotes mentioning "${cleanSearchTerm}": ${videoUrl}\n\nSee them all here! ${pageUrl}`;
+                                              : `Just one of ${totalQuotes} quotes mentioning "${cleanSearchTerm}": ${videoUrl}\n\nSee them all here! ${pageUrl}`;
                                           window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`, '_blank');
                                           if (onShowDonationModal) onShowDonationModal();
                                       }}
