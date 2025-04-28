@@ -46,7 +46,7 @@ const SearchPage = ({
     <div className='main-container'>
         <div className="logo-container" onClick={handleLogoClick}>
             <img 
-                src="public\Vineshroom.webp" 
+                src="public/Vineshroom.webp" 
                 alt="Vine sauce shroom Logo"
             />
         </div>
